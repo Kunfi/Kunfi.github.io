@@ -92,6 +92,7 @@ the same, no matter what screen size you have*/
 .d-block {
     width: 100%;
     height:500px;
+    margin-top: 50px;
     object-fit: contain;
     margin: auto;
     background-color: #6B8DBB;
