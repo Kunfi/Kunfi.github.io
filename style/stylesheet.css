@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+/*the following two sections determine the size of the
+title in the middle of the screen on the index page. it changes 
+to a smaller font whenever the screen size is less than 992px*/
+@media screen and (min-width: 992px) {
+    h1.title{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    font-size: 4em;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    top: 10%;
+    filter: drop-shadow(3px 3px 3px #000);
+    left:50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+}
+
+@media screen and (max-width: 991px) {
+    h1.title{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    font-size: 2em;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    top: 40%;
+    left:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+}
+
+header{
+    background-color: #2F578E;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    text-align: center;
+}
+
+ /*defnies the space directly over the footer with background-color
+ and padding for a more pleasing visual experience*/
+.bottomrow{
+    background-color: #6B8DBB;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+ /*defines the very bottom of the page with a darkes background-color and
+ therefore white colored letters with black border as well as aligning it
+ to the center of the page*/
+footer{
+    background-color: #2F578E;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    text-align: right;
+}
+
+ /*defines the size of the social media logos in the bottom right*/
+.logo{
+    width: auto;
+    height: 50px;
+}
+
+ /*a space between the first and second row of social media icons*/
+#row2{
+    margin-top: 10px;
+}
+
+/*these parameters define carousel pictures in the index page
+the width is set to auto so the 3 different imagesclaing stays
+the same, no matter what screen size you have*/
+.d-block {
+    width: 100%;
+    height:769px;
+    object-fit: cover;
+    margin: auto;
+    background-color: #6B8DBB;
+}
+
+ /*defines positioning and reference to the blog page for the blog button on the 
+ index page*/
+#blogbutton{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+ /*similar to the blog button before, the title of the index page is positioned
+ and resized here and similar to the footer, the color of the letters are white with
+ black borders*/
+#blogtitle{
+    position: absolute;
+    font-size: 4em;
+    z-index: 10;
+    top: 25%;
+    left: 50%;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+ /*these are the five different recipe pictures and how the are resized and
+ positioned on the blog page*/
+.description{
+    position: relative;
+    top: 300px;
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+/*the recipe titels are defined here*/
+h3{
+    box-sizing: border-box;
+    background-color: rgba(43, 90, 156, 0.7);
+    position: relative;
+    width: 250px;
+    z-index: 20;
+    top: 300px;
+    font-size: 1em;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    margin: auto;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ /*following the pictures is the actual description for the corresponding images*/
+p{
+    box-sizing: border-box;
+    background-color: #9EB8DA;
+    position: relative;
+    width: 250px;
+    z-index: 20;
+    top: 300px;
+    font-size: 10px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ /*this is a filler background to position bottom elements like footer and bottomrow
+ in a better manner*/
+#backgroundblog{
+    box-sizing: content-box;
+    height: 500px;
+    background-color: #6B8DBB;
+}
+
+ /*following is the top picture on the blog page, as well as its
+ positioning and size*/
+#blogpicture{
+    position: absolute;
+    width: 100%;
+    height:700px;
+    object-fit: cover;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+ /*similar to the blogpage this space is to position the bottom elements better*/
+#backgroundcontact{
+    box-sizing: content-box;
+    height: 769px;
+    background-color: #6B8DBB;
+}
+
+ /*following is the top picture on the blog page, as well as its
+ positioning and size*/
+ #contactpicture{
+    position: absolute;
+    width: 100%;
+    height:769px;
+    object-fit: cover;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+ /*as the name suggests, here we define the contact form on the contact page*/
+.contactform{
+    box-sizing: content-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    width: 500px;
+    margin-top: 300px;
+    transform: translate(-50%, 0);
+    background-color: #9EB8DA;
+    position: absolute;
+    z-index: 10;
+    color: #FFF;
+    text-shadow: -1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    text-align: center;
+    top: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ /*a bottom margin between the different input lines in the contact form
+ for a more visualy pleasing experience*/
+.formtext{
+    margin-bottom: 5px;
+}
