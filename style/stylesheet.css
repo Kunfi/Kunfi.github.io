@@ -49,25 +49,20 @@ to a smaller font whenever the screen size is less than 992px*/
 }
 
 header{
-    background-color: #2F578E;
-    color: #FFF;
-    text-shadow: -1px 1px 0 #000,
-                 1px 1px 0 #000,
-                 1px -1px 0 #000,
-                 -1px -1px 0 #000;
-    text-align: center;
+    background-color: #805B15;
+    height: 230px;
 }
 
 #drawingcarousel{
-    background-color: #6B8DBB;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    background-color: #805B15;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
  /*defnies the space directly over the footer with background-color
  and padding for a more pleasing visual experience*/
 .bottomrow{
-    background-color: #6B8DBB;
+    background-color: #AA8439;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -76,7 +71,7 @@ header{
  therefore white colored letters with black border as well as aligning it
  to the center of the page*/
 footer{
-    background-color: #2F578E;
+    background-color: #553800;
     color: #FFF;
     text-shadow: -1px 1px 0 #000,
                  1px 1px 0 #000,
@@ -92,44 +87,11 @@ the same, no matter what screen size you have*/
 .d-block {
     width: 100%;
     height:500px;
-    margin-top: 50px;
     object-fit: contain;
     margin: auto;
-    background-color: #6B8DBB;
+    background-color: #805B15;
 }
 
- /*defines positioning and reference to the blog page for the blog button on the 
- index page*/
-#blogbutton{
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-}
-
- /*similar to the blog button before, the title of the index page is positioned
- and resized here and similar to the footer, the color of the letters are white with
- black borders*/
-#blogtitle{
-    position: absolute;
-    font-size: 4em;
-    z-index: 10;
-    top: 25%;
-    left: 50%;
-    color: #FFF;
-    text-shadow: -1px 1px 0 #000,
-                 1px 1px 0 #000,
-                 1px -1px 0 #000,
-                 -1px -1px 0 #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-}
 
  /*these are the five different recipe pictures and how the are resized and
  positioned on the blog page*/
@@ -144,7 +106,7 @@ the same, no matter what screen size you have*/
 /*the recipe titels are defined here*/
 h3{
     box-sizing: border-box;
-    background-color: rgba(43, 90, 156, 0.7);
+    background-color: rgba(128, 91, 21, 0.7);
     position: relative;
     width: 250px;
     z-index: 20;
@@ -176,43 +138,4 @@ p{
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
- /*this is a filler background to position bottom elements like footer and bottomrow
- in a better manner*/
-#backgroundblog{
-    box-sizing: content-box;
-    height: 500px;
-    background-color: #6B8DBB;
-}
-
- /*following is the top picture on the blog page, as well as its
- positioning and size*/
-#blogpicture{
-    position: absolute;
-    width: 100%;
-    height:700px;
-    object-fit: cover;
-    z-index: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
- /*similar to the blogpage this space is to position the bottom elements better*/
-#backgroundcontact{
-    box-sizing: content-box;
-    height: 769px;
-    background-color: #6B8DBB;
-}
-
- /*following is the top picture on the blog page, as well as its
- positioning and size*/
- #contactpicture{
-    position: absolute;
-    width: 100%;
-    height:769px;
-    object-fit: cover;
-    z-index: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
